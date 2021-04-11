@@ -6,9 +6,10 @@ body {
 
 .calc-wrapper {
     margin: 10rem auto;
-    max-width: 25rem;
+    max-width: 20rem;
     border: 1px solid black;
-    padding: 1rem;
+    padding: 1.5rem;
+    background-color:rgba(167, 167, 167, 0.705);
 }
 
 .display-screen {
@@ -16,11 +17,19 @@ body {
     min-height: 3rem;
     border: 1px solid black;
     width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .button-wrapper {
     width: 100%;
     border: 1px solid black;
+}
+
+.btn-plus {
+    max-width: 25%;
 }
 
 [class^="btn-row"] {
@@ -31,6 +40,6 @@ body {
 
 [class^="btn-row"] * {
     flex-basis: 100%;
-    min-height: 3rem;
+    min-height: 4rem;
     font-size: 1.2rem;
 }

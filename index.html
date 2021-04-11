@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main>
+        <div class="calc-wrapper">
+            <div class="display-screen"></div>
+            <div class="button-wrapper">
+                <div class="btn-row-1">
+                    <button>CE</button>
+                    <button>C</button>
+                    <button>Del</button>
+                    <button>+</button>
+                </div>
+                <div class="btn-row-2">
+                    <button onclick="handleButtonClick()">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>-</button>
+                </div>
+                <div class="btn-row-3">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>/</button>
+                </div>
+                <div class="btn-row-4">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>x</button>
+                </div>
+                <div class="btn-row-4">
+                    <button>X<sup>2</sup></button>
+                    <button>0</button>
+                    <button>.</button>
+                    <button>=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function handleButtonClick() {
+          console.log('click!');
+        }
+    </script>
+</body>
+</html>

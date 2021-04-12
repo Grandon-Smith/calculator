@@ -2,25 +2,39 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(194, 28, 28), rgb(255, 255, 255));
+}
+
+main {
+    padding-top: 1rem;
+    height: 100%;
+    min-width: 300px;
 }
 
 .calc-wrapper {
-    margin: 10rem auto;
+    margin: auto auto;
     max-width: 20rem;
     border: 1px solid black;
-    padding: 1.5rem;
-    background-color:rgba(167, 167, 167, 0.705);
+    padding: 2rem;
+    /* background-color:rgba(122, 122, 122, 0.781); */
+    background-color: rgba(170, 170, 170, 0.685);
 }
 
 .display-screen {
-    background-color: white;
+    background-color: rgb(245, 229, 229);
     min-height: 3rem;
+    max-height: auto;
     border: 1px solid black;
-    width: 100%;
-    font-size: 2rem;
+    max-width: 100%;
+    font-size: 2.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .button-wrapper {
@@ -42,4 +56,27 @@ body {
     flex-basis: 100%;
     min-height: 4rem;
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.operator {
+    font-size: 1.5rem;
+}
+
+/* UTILITY CLASSES */
+
+.green {
+    background-color: rgba(0, 128, 0, 0.753);
+    transition: all .2s ease-in-out;
+}
+
+.green:hover {
+    background-color: rgb(0, 128, 0);
+    color: white;
+}
+
+@media all and (min-width: 500px) {
+    main {
+        padding-top: 10rem;
+    }
 }

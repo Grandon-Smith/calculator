@@ -32,7 +32,9 @@ clickOperand = (op) => {
 };
 
 deleteBtn = () => {
-    display.innerHTML = display.innerHTML.slice(0, -1);
+    display.innerHTML === '0' ? ""
+        : display.innerHTML.length === 1 ? display.innerHTML = '0'
+        : display.innerHTML = display.innerHTML.slice(0, -1);
 };
 
 squareVal = () => {
